@@ -75,3 +75,5 @@ if __name__ == '__main__':
 
     # Discover and run the tests with the configured runner
     unittest.main(testRunner=runner)
+
+# sonar-scanner.bat -D"sonar.projectKey=flask" -D"sonar.sources=." -D"sonar.host.url=http://localhost:9000" -D"sonar.login=sqp_8549c4135311801b29a82a33d0826344bfe38c71" -D"sonar.python.coverage.reportPaths=coverage.xml" -D"sonar.tests=." -D"sonar.test.inclusions=test_*.py" -D"sonar.python.xunit.reportPath=xunit-reports/*.xml"
