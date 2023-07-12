@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="FlaskTestCase-20230712214203" tests="4" file=".py" time="0.023" timestamp="2023-07-12T21:42:03" failures="0" errors="0" skipped="0">
+	<testcase classname="FlaskTestCase" name="test_about" time="0.017" timestamp="2023-07-12T21:42:03" file="test_app.py" line="15"/>
+	<testcase classname="FlaskTestCase" name="test_capitalize" time="0.004" timestamp="2023-07-12T21:42:03" file="test_app.py" line="52"/>
+	<testcase classname="FlaskTestCase" name="test_hello" time="0.001" timestamp="2023-07-12T21:42:03" file="test_app.py" line="10"/>
+	<testcase classname="FlaskTestCase" name="test_invalid_route" time="0.001" timestamp="2023-07-12T21:42:03" file="test_app.py" line="67"/>
+</testsuite>

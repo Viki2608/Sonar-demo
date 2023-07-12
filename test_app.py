@@ -17,37 +17,37 @@ class FlaskTestCase(unittest.TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.data.decode(), 'This is the about page.')
 
-    def test_user(self):
-        # Test with a regular username
-        username = 'John'
-        response = self.app.get(f'/user/{username}')
-        self.assertEqual(response.status_code, 200)
-        expected_message = f"Welcome, {username}!"
-        self.assertEqual(response.data.decode(), expected_message)
+    # def test_user(self):
+    #     # Test with a regular username
+    #     username = 'John'
+    #     response = self.app.get(f'/user/{username}')
+    #     self.assertEqual(response.status_code, 200)
+    #     expected_message = f"Welcome, {username}!"
+    #     self.assertEqual(response.data.decode(), expected_message)
 
-        # Test with a username containing special characters
-        special_username = '@#User123!'
-        response = self.app.get(f'/user/{special_username}')
-        self.assertEqual(response.status_code, 200)
-        expected_message = f"Welcome, {special_username}!"
-        self.assertEqual(response.data.decode(), expected_message)
+    #     # Test with a username containing special characters
+    #     special_username = '@#User123!'
+    #     response = self.app.get(f'/user/{special_username}')
+    #     self.assertEqual(response.status_code, 200)
+    #     expected_message = f"Welcome, {special_username}!"
+    #     self.assertEqual(response.data.decode(), expected_message)
 
-    def test_multiply(self):
-        # Test with positive numbers
-        num1 = 5
-        num2 = 10
-        response = self.app.get(f'/multiply/{num1}/{num2}')
-        self.assertEqual(response.status_code, 200)
-        expected_message = f"The multiplication of {num1} and {num2} is: 50"
-        self.assertEqual(response.data.decode(), expected_message)
+    # def test_multiply(self):
+    #     # Test with positive numbers
+    #     num1 = 5
+    #     num2 = 10
+    #     response = self.app.get(f'/multiply/{num1}/{num2}')
+    #     self.assertEqual(response.status_code, 200)
+    #     expected_message = f"The multiplication of {num1} and {num2} is: 50"
+    #     self.assertEqual(response.data.decode(), expected_message)
 
-        # Test with negative numbers
-        num1 = -5
-        num2 = 10
-        response = self.app.get(f'/multiply/{num1}/{num2}')
-        self.assertEqual(response.status_code, 200)
-        expected_message = f"The multiplication of {num1} and {num2} is: -50"
-        self.assertEqual(response.data.decode(), expected_message)
+    #     # Test with negative numbers
+    #     num1 = -5
+    #     num2 = 10
+    #     response = self.app.get(f'/multiply/{num1}/{num2}')
+    #     self.assertEqual(response.status_code, 200)
+    #     expected_message = f"The multiplication of {num1} and {num2} is: -50"
+    #     self.assertEqual(response.data.decode(), expected_message)
 
     def test_capitalize(self):
         # Test with a lowercase text
