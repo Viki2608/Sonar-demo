@@ -2,5 +2,5 @@ projectKey=flask
 serverUrl=http://localhost:9000
 serverVersion=9.9.0.65466
 dashboardUrl=http://localhost:9000/dashboard?id=flask
-ceTaskId=AYlK5xF-FaN12HFlInqb
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AYlK5xF-FaN12HFlInqb
+ceTaskId=AYlNz9dSfY00bQLqniuj
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AYlNz9dSfY00bQLqniuj
